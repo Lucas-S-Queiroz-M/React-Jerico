@@ -1,0 +1,41 @@
+{
+  "project_info": {
+    "project_number": "803251744467",
+    "project_id": "jerico-17860",
+    "storage_bucket": "jerico-17860.appspot.com"
+  },
+  
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:803251744467:android:7313042ba2e1fe4e342e26",
+        "android_client_info": {
+          "package_name": "comunidade.nova.jerico"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "803251744467-asqqcv11te3h75ivi100ktqiliqaojdq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsbq7AI7QaYy_RvojSVUIZgPzq7fFNvKY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "803251744467-asqqcv11te3h75ivi100ktqiliqaojdq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
+
