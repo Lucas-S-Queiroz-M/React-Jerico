@@ -52,7 +52,7 @@ export default function LoginScreen(props: LoginScreenProps) {
     >
         <View style={styles.margemTop}>
         <Text style={styles.logo}>Comunidade Nova Jerico</Text>
-        <Text></Text>  
+          
 
           <View style={styles.margem}>
           
@@ -78,20 +78,19 @@ export default function LoginScreen(props: LoginScreenProps) {
           />
 
           </View>
-          <View style={{alignItems: 'center'}}>  
-              <View style={styles.listItem}>
-              <Button 
-                title="Acessar" icon={{name:'home', color: 'white'}} 
-                buttonStyle={{backgroundColor:'#800000', marginHorizontal: 10, borderRadius: 30}} 
-                onPress={handleLogin}>            
-              </Button>
-              <Text></Text>
-              <Button 
-                title="Cadastrar" icon={{name:'feedback', color: 'white'}} 
-                buttonStyle={{backgroundColor:'#800000', marginHorizontal: 10, borderRadius: 30}} 
-                onPress={() => modal.current?.open()}>            
-              </Button>
-              </View>
+
+          <View style={styles.listItem}>
+          <Button 
+            title="Acessar" icon={{name:'home', color: 'white'}} 
+            buttonStyle={{backgroundColor:'#800000', marginHorizontal: 10, borderRadius: 30}} 
+            onPress={handleLogin}>            
+          </Button>
+          <Text></Text>
+          <Button 
+            title="Cadastrar" icon={{name:'feedback', color: 'white'}} 
+            buttonStyle={{backgroundColor:'#800000', marginHorizontal: 10, borderRadius: 30}} 
+            onPress={() => modal.current?.open()}>            
+          </Button>
           </View>         
         </View>
       </Formik>
@@ -125,18 +124,20 @@ const styles = StyleSheet.create({
 
   margem :{
     margin: 10,    
-    marginTop: 270,
-    marginVertical: 1,
-    justifyContent: 'center', 
+    marginTop: 200,
+    marginVertical: 10,
+    marginHorizontal: 10,
+    //alignItems: 'center',
+    //justifyContent: 'center', 
   },
 
   margemTop :{
     margin: 10,    
-    marginTop: 10,
-    marginVertical: 20,
+    marginTop: 200,
+    marginVertical: 260,
     marginHorizontal: 10,
-    marginLeft: 10 ,
-    justifyContent: 'center', 
+    //alignItems: 'center',
+    //justifyContent: 'center', 
   },
 
   title:{
@@ -212,12 +213,12 @@ const styles = StyleSheet.create({
   errorLogin: {color: '#fff', textAlign: 'center'},
 
   listItem:{
-    //margin: 12,  
+    margin: 12,  
     flexDirection: 'row',
     backgroundColor:'white', 
-    //alignItems: 'center',
-    //justifyContent: 'center', 
-    //marginHorizontal: 10
+    alignItems: 'center',
+    justifyContent: 'center', 
+    marginHorizontal: 10
   },
   
   cadastrar: {

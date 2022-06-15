@@ -78,20 +78,19 @@ export default function LoginScreen(props: LoginScreenProps) {
           />
 
           </View>
-          <View style={{alignItems: 'center'}}>  
-              <View style={styles.listItem}>
-              <Button 
-                title="Acessar" icon={{name:'home', color: 'white'}} 
-                buttonStyle={{backgroundColor:'#800000', marginHorizontal: 10, borderRadius: 30}} 
-                onPress={handleLogin}>            
-              </Button>
-              <Text></Text>
-              <Button 
-                title="Cadastrar" icon={{name:'feedback', color: 'white'}} 
-                buttonStyle={{backgroundColor:'#800000', marginHorizontal: 10, borderRadius: 30}} 
-                onPress={() => modal.current?.open()}>            
-              </Button>
-              </View>
+
+          <View style={styles.listItem}>
+          <Button 
+            title="Acessar" icon={{name:'home', color: 'white'}} 
+            buttonStyle={{backgroundColor:'#800000', marginHorizontal: 10, borderRadius: 30}} 
+            onPress={handleLogin}>            
+          </Button>
+          <Text></Text>
+          <Button 
+            title="Cadastrar" icon={{name:'feedback', color: 'white'}} 
+            buttonStyle={{backgroundColor:'#800000', marginHorizontal: 10, borderRadius: 30}} 
+            onPress={() => modal.current?.open()}>            
+          </Button>
           </View>         
         </View>
       </Formik>
@@ -127,6 +126,8 @@ const styles = StyleSheet.create({
     margin: 10,    
     marginTop: 270,
     marginVertical: 1,
+    //marginHorizontal: 10,
+    //alignItems: 'center',
     justifyContent: 'center', 
   },
 
@@ -135,7 +136,8 @@ const styles = StyleSheet.create({
     marginTop: 10,
     marginVertical: 20,
     marginHorizontal: 10,
-    marginLeft: 10 ,
+    marginLeft ,
+    //alignItems: 'center',
     justifyContent: 'center', 
   },
 

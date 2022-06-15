@@ -50,12 +50,12 @@ export default function LoginScreen(props: LoginScreenProps) {
       })}
       onSubmit={handleLogin}
     >
-        <View style={styles.margemTop}>
-        <Text style={styles.logo}>Comunidade Nova Jerico</Text>
-        <Text></Text>  
-
-          <View style={styles.margem}>
+        <View style={styles.margem}>
+          <Text style={styles.logo}>Comunidade Nova Jerico</Text>
           
+
+          <View >
+         
           <Input
               placeholder="Digite seu email"
               style={styles.input}              
@@ -78,20 +78,19 @@ export default function LoginScreen(props: LoginScreenProps) {
           />
 
           </View>
-          <View style={{alignItems: 'center'}}>  
-              <View style={styles.listItem}>
-              <Button 
-                title="Acessar" icon={{name:'home', color: 'white'}} 
-                buttonStyle={{backgroundColor:'#800000', marginHorizontal: 10, borderRadius: 30}} 
-                onPress={handleLogin}>            
-              </Button>
-              <Text></Text>
-              <Button 
-                title="Cadastrar" icon={{name:'feedback', color: 'white'}} 
-                buttonStyle={{backgroundColor:'#800000', marginHorizontal: 10, borderRadius: 30}} 
-                onPress={() => modal.current?.open()}>            
-              </Button>
-              </View>
+
+          <View style={styles.listItem}>
+          <Button 
+            title="Acessar" icon={{name:'home', color: 'white'}} 
+            buttonStyle={{backgroundColor:'#800000', marginHorizontal: 10, borderRadius: 30}} 
+            onPress={handleLogin}>            
+          </Button>
+          <Text></Text>
+          <Button 
+            title="Cadastrar" icon={{name:'feedback', color: 'white'}} 
+            buttonStyle={{backgroundColor:'#800000', marginHorizontal: 10, borderRadius: 30}} 
+            onPress={() => modal.current?.open()}>            
+          </Button>
           </View>         
         </View>
       </Formik>
@@ -121,22 +120,6 @@ const styles = StyleSheet.create({
     flex:20,
     justifyContent: 'center',
     alignItems: 'center'
-  },
-
-  margem :{
-    margin: 10,    
-    marginTop: 270,
-    marginVertical: 1,
-    justifyContent: 'center', 
-  },
-
-  margemTop :{
-    margin: 10,    
-    marginTop: 10,
-    marginVertical: 20,
-    marginHorizontal: 10,
-    marginLeft: 10 ,
-    justifyContent: 'center', 
   },
 
   title:{
@@ -212,14 +195,22 @@ const styles = StyleSheet.create({
   errorLogin: {color: '#fff', textAlign: 'center'},
 
   listItem:{
-    //margin: 12,  
+    margin: 12,  
     flexDirection: 'row',
     backgroundColor:'white', 
+    alignItems: 'center',
+    justifyContent: 'center', 
+    marginHorizontal: 10
+  },
+  margem :{
+    margin: 10,    
+    marginTop: 10,
+    marginVertical: 10,
+    marginHorizontal: 10,
     //alignItems: 'center',
     //justifyContent: 'center', 
-    //marginHorizontal: 10
-  },
-  
+    },
+
   cadastrar: {
     color: '#fff',
     fontSize: 20,

@@ -136,6 +136,7 @@ const styles = StyleSheet.create({
     marginVertical: 20,
     marginHorizontal: 10,
     marginLeft: 10 ,
+    //alignItems: 'center',
     justifyContent: 'center', 
   },
 

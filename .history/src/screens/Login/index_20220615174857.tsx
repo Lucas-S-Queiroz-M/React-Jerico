@@ -127,6 +127,8 @@ const styles = StyleSheet.create({
     margin: 10,    
     marginTop: 270,
     marginVertical: 1,
+    //marginHorizontal: 10,
+    //alignItems: 'center',
     justifyContent: 'center', 
   },
 
@@ -136,6 +138,7 @@ const styles = StyleSheet.create({
     marginVertical: 20,
     marginHorizontal: 10,
     marginLeft: 10 ,
+    //alignItems: 'center',
     justifyContent: 'center', 
   },
 
