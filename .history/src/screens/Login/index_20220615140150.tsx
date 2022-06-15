@@ -93,6 +93,7 @@ export default function LoginScreen(props: LoginScreenProps) {
 
           </View>
 
+        
           <View style={styles.listItem}>
           <Button 
             title="Acessar" icon={{name:'home', color: 'white'}} 
@@ -135,7 +136,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center'
   },
-
+  
   title:{
     marginBottom: 14,
     fontSize: 20,  
@@ -162,34 +163,29 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center'
   },
-
   buttonText:{
     fontSize: 20,
     color: '#FFF',
     justifyContent: 'center',
     alignItems: 'center'
   },
-
   Background:{
     width: '100%',
     justifyContent: 'center',
     height: '100%'
   },
-
   erro: { 
     fontSize: 20, 
     textAlign: "center", 
     marginBottom: 20, 
     marginTop: -10, 
     color: 'red'},
-
   containerInput: {
     backgroundColor: '#800000',
     borderRadius: 30, 
     padding: 5,
     marginBottom: 5,
   },
-
   sectionStyle: {
     flexDirection: 'row',    
     justifyContent: 'space-around',    
@@ -201,13 +197,9 @@ const styles = StyleSheet.create({
     borderRadius: 10,   
     width: 300,
   },
-
   logo: { color: '#800000', fontSize: 50, textAlign: 'center'},
-
   error:{color:'#fff', fontSize: 20, textAlign:'right'},
-
   errorLogin: {color: '#fff', textAlign: 'center'},
-
   listItem:{
     margin: 12,  
     flexDirection: 'row',
@@ -216,14 +208,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center', 
     marginHorizontal: 10
   },
-  margem :{
-    margin: 12,    
-    marginTop: 10,
-    alignItems: 'center',
-    justifyContent: 'center', 
-    marginHorizontal: 10
-  },
-
   cadastrar: {
     color: '#fff',
     fontSize: 20,

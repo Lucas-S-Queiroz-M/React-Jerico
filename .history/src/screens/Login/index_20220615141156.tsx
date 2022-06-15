@@ -218,7 +218,7 @@ const styles = StyleSheet.create({
   },
   margem :{
     margin: 12,    
-    marginTop: 10,
+    marginTop: 
     alignItems: 'center',
     justifyContent: 'center', 
     marginHorizontal: 10

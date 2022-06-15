@@ -217,13 +217,14 @@ const styles = StyleSheet.create({
     marginHorizontal: 10
   },
   margem :{
-    margin: 12,    
-    marginTop: 10,
+    margin: 12,  
+    flexDirection: 'row',
+    backgroundColor:'white', 
     alignItems: 'center',
     justifyContent: 'center', 
     marginHorizontal: 10
   },
-
+  
   cadastrar: {
     color: '#fff',
     fontSize: 20,

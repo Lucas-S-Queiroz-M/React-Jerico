@@ -216,14 +216,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center', 
     marginHorizontal: 10
   },
-  margem :{
-    margin: 12,    
-    marginTop: 10,
-    alignItems: 'center',
-    justifyContent: 'center', 
-    marginHorizontal: 10
-  },
-
+  
   cadastrar: {
     color: '#fff',
     fontSize: 20,
