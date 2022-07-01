@@ -1,6 +1,9 @@
 import React from 'react';
 import { StyleSheet, View, Dimensions} from 'react-native';
+import { Button } from 'react-native-elements';
 import { useNavigation } from "@react-navigation/native";
+import * as Location from 'expo-location';
+import * as MediaLibrary from 'expo-media-library';
 import MapView, { Marker } from 'react-native-maps';
 
 export default function Mapa() {

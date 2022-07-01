@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { View, Text, StyleSheet, Image } from 'react-native';
 import { AdMobBanner, AdMobInterstitial, AdMobRewarded } from 'expo-ads-admob';
 import { Button } from 'react-native-elements';
@@ -25,14 +25,14 @@ export default function Sobre() {
       <Text style={{color:'#800000', fontSize: 20}}>INFORMAÇÕES ADICIONAIS</Text>
       <Text></Text>
       <Button icon={{name:'phone', color:'#fff'}} buttonStyle={{backgroundColor:'#800000', marginHorizontal: 10}}/>
-      <Text style={{color:'#800000', fontSize: 20}}>(82) 98813-5428</Text>
-      <Text></Text>
-      <Button icon={{name:'email', color:'#fff'}} buttonStyle={{backgroundColor:'#800000', marginHorizontal: 10}}/>
-      <Text style={{color:'#800000', fontSize: 20}}>andersonsilvanj82@gmail.com</Text>
-      <Text style={{color:'#800000', fontSize: 20}}>compreicaro@hotmail.com</Text>
-      <Text></Text>
-      <Button icon={{name:'map', color:'#fff'}} onPress={() => navigation.navigate("Mapa")} buttonStyle={{backgroundColor:'#800000', marginHorizontal: 10}}/>
-      <Text style={{color:'#800000', fontSize: 20}}>Localização</Text>
+     <Text style={{color:'#800000', fontSize: 20}}>(82) 98813-5428</Text>
+     <Text></Text>
+     <Button icon={{name:'email', color:'#fff'}} buttonStyle={{backgroundColor:'#800000', marginHorizontal: 10}}/>
+     <Text style={{color:'#800000', fontSize: 20}}>andersonsilvanj82@gmail.com</Text>
+     <Text style={{color:'#800000', fontSize: 20}}>compreicaro@hotmail.com</Text>
+     <Text></Text>
+     <Button icon={{name:'map', color:'#fff'}} onPress={() => navigation.navigate("Mapa")} buttonStyle={{backgroundColor:'#800000', marginHorizontal: 10}}/>
+     <Text style={{color:'#800000', fontSize: 20}}>Localização</Text>
      
    </View>
    </View>

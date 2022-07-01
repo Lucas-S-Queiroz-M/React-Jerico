@@ -46,7 +46,7 @@ export default function LoginScreen(props: LoginScreenProps) {
       initialValues={{email: '', senha: ''}}
       validationSchema={Yup.object({
         email: Yup.string().required('Informe o email').email('E-mail não válido'),
-        senha: Yup.string().required('Informe a senha').min(6, 'A senha precisa de 6 caracteres')
+        senha: Yup.string().required('Informe a senha').min(6, 'A senha precisa de 6 caracteres',(ToastAndroid.show('A senha precisa de 6 caracteres', ToastAndroid.LONG)))
       })}
       onSubmit={handleLogin}
     >

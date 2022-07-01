@@ -25,8 +25,8 @@ export default function Sobre() {
       <Text style={{color:'#800000', fontSize: 20}}>INFORMAÇÕES ADICIONAIS</Text>
       <Text></Text>
       <Button icon={{name:'phone', color:'#fff'}} buttonStyle={{backgroundColor:'#800000', marginHorizontal: 10}}/>
-      <Text style={{color:'#800000', fontSize: 20}}>(82) 98813-5428</Text>
-      <Text></Text>
+        <Text style={{color:'#800000', fontSize: 20}}>(82) 98813-5428</Text>
+        <Text></Text>
       <Button icon={{name:'email', color:'#fff'}} buttonStyle={{backgroundColor:'#800000', marginHorizontal: 10}}/>
       <Text style={{color:'#800000', fontSize: 20}}>andersonsilvanj82@gmail.com</Text>
       <Text style={{color:'#800000', fontSize: 20}}>compreicaro@hotmail.com</Text>

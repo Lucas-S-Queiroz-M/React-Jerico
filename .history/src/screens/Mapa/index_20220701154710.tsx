@@ -1,6 +1,9 @@
-import React from 'react';
-import { StyleSheet, View, Dimensions} from 'react-native';
+import React, {useState, useEffect, useRef} from 'react';
+import { StyleSheet, Text, View, TextInput, Dimensions} from 'react-native';
+import { Button } from 'react-native-elements';
 import { useNavigation } from "@react-navigation/native";
+import * as Location from 'expo-location';
+import * as MediaLibrary from 'expo-media-library';
 import MapView, { Marker } from 'react-native-maps';
 
 export default function Mapa() {
@@ -21,8 +24,9 @@ export default function Mapa() {
         <Marker 
           coordinate = {{latitude: -9.7493256,longitude: -35.8833314}}
           pinColor = {"red"} // any color
-          title={"Comunidade Católica Nova Jericó"}
-          description={"Ser despojado para Adorar e Exaltar o Cristo Rei acolhendo e amando o irmão"}
+          title={"Comunidade Nova Jericó"}
+          description={"
+ Comunidade Católica Ser despojado para Adorar e Exaltar o Cristo Rei acolhendo e amando o irmão"}
         />
       </MapView>
 		</View>

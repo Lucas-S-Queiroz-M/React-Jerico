@@ -47,6 +47,7 @@ export default function LoginScreen(props: LoginScreenProps) {
       validationSchema={Yup.object({
         email: Yup.string().required('Informe o email').email('E-mail não válido'),
         senha: Yup.string().required('Informe a senha').min(6, 'A senha precisa de 6 caracteres')
+        .catch(error => ToastAndroid.show('O campo Email ou Senha, precisa ser preenchido!', ToastAndroid.LONG))
       })}
       onSubmit={handleLogin}
     >
